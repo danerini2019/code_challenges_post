@@ -1,7 +1,7 @@
-def two_sum(numbers, target):
-    sum_dict = {i: numbers[i] for i in range(len(numbers))}
-    for i in range(len(numbers)):
-        dif = target - numbers[i]
-        if dif in numbers:
-            return (i, numbers.index(dif))
-    print('dog')
+def two_sum(nums, target):
+    d = {}
+    for i, num in enumerate(nums):
+        diff = target - num
+        if diff in d:
+            return [d[diff], i]
+        d[num] = i
