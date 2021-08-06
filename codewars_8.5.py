@@ -4,4 +4,4 @@ def two_sum(numbers, target):
         dif = target - numbers[i]
         if dif in numbers:
             return (i, numbers.index(dif))
-    
+    print('dog')
